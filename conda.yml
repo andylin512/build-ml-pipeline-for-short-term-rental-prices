@@ -7,5 +7,6 @@ dependencies:
   - pyyaml
   - hydra-core
   - pip
+  - scikit-learn
   - pip:
       - wandb
