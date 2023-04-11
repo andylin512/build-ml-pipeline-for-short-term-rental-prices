@@ -41,6 +41,11 @@ def go(args):
         df.dropna()
         logger.info("Remove missing values")
 
+        # Define the proper geolocation
+        idx = df['longitude'].between(-74.25, -73.50) & df['latitude'].between(40.5, 41.2)
+        df = df[idx].copy()
+        logger.info("drop obs not in the proper geolocation")
+
         # Save cleaned data and upload to w&b
         OUTPUT_file = "clean_sample.csv"
         df.to_csv(OUTPUT_file, index=False)
