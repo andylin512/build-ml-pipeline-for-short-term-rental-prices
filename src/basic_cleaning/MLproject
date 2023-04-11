@@ -6,27 +6,27 @@ entry_points:
     parameters:
 
       input_artifact:
-        description: ## ADD DESCRIPTION
+        description: ## raw data input
         type: string
 
       output_artifact:
-        description: ## ADD DESCRIPTION
+        description: ## cleaned data output
         type: string
 
       output_type:
-        description: ## ADD DESCRIPTION
+        description: ## output type
         type: string
 
       output_description:
-        description: ## ADD DESCRIPTION
+        description: ## output file description
         type: string
 
       min_price:
-        description: ## ADD DESCRIPTION
+        description: ## set the min. price for the price col
         type: string
 
       max_price:
-        description: ## ADD DESCRIPTION
+        description: ## set the max. price for the price col
         type: string
 
 
